@@ -1,0 +1,14 @@
+name: Hello World Workflow
+
+on:
+  push:  # Trigger this workflow when code is pushed
+    branches:
+      - main  # Runs only on the main branch
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+
+    steps:
+      - name: Print Hello World
+        run: echo "Hello, World!"
